@@ -3,28 +3,22 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
+    <groupId>com.wix.rest</groupId>
     <version>1.0.0-SNAPSHOT</version>
-    <artifactId>rest-rfc7807-api</artifactId>
-    <packaging>jar</packaging>
-    <name>Rest RFC 7807 API</name>
+    <artifactId>rest-rfc7807-parent</artifactId>
+    <packaging>pom</packaging>
+    <name>Rest RFC 7807 Parent</name>
     <description>
-        Rest RFC 7807 API module
+        Rest RFC 7807 Parent module
     </description>
+    <url>https://github.com/wix/rest-rfc7807</url>
 
     <parent>
-        <groupId>com.wix.rest</groupId>
-        <artifactId>rest-rfc7807-parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../rest-rfc7807-parent</relativePath>
+        <groupId>com.wix</groupId>
+        <artifactId>wix-oss-scala-parent</artifactId>
+        <version>0.47.0</version>
+        <relativePath/>
     </parent>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-annotations</artifactId>
-            <version>${com.fasterxml.jackson.version}</version>
-        </dependency>
-    </dependencies>
 
     <developers>
         <developer>
@@ -42,5 +36,16 @@
             </roles>
         </developer>
     </developers>
+
+    <scm>
+        <url>https://github.com/wix/rest-rfc7807</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <properties>
+        <com.fasterxml.jackson.version>2.9.5</com.fasterxml.jackson.version>
+        <com.typesafe.akka.stream.version>2.5.12</com.typesafe.akka.stream.version>
+        <com.typesafe.akka.http.version>10.1.1</com.typesafe.akka.http.version>
+    </properties>
 
 </project>

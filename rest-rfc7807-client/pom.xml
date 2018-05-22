@@ -13,9 +13,9 @@
 
     <parent>
         <groupId>com.wix.rest</groupId>
-        <artifactId>rest-rfc7807</artifactId>
+        <artifactId>rest-rfc7807-parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath>..</relativePath>
+        <relativePath>../rest-rfc7807-parent</relativePath>
     </parent>
 
     <dependencies>
