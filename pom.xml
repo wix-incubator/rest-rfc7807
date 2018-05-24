@@ -3,6 +3,7 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
+    <groupId>com.wix.rest</groupId>
     <version>1.0.0-SNAPSHOT</version>
     <artifactId>rest-rfc7807</artifactId>
     <packaging>pom</packaging>
@@ -10,12 +11,13 @@
     <description>
         Scala support for RESTful web-services that implement RFC 7807 (Problem Details for HTTP APIs)
     </description>
+    <url>https://github.com/wix/rest-rfc7807</url>
 
     <parent>
-        <groupId>com.wix.rest</groupId>
-        <artifactId>rest-rfc7807-parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
-        <relativePath>rest-rfc7807-parent</relativePath>
+        <groupId>com.wix</groupId>
+        <artifactId>wix-oss-scala-parent</artifactId>
+        <version>0.47.0</version>
+        <relativePath/>
     </parent>
 
     <developers>
@@ -42,8 +44,13 @@
         <tag>HEAD</tag>
     </scm>
 
+    <properties>
+        <com.fasterxml.jackson.version>2.9.5</com.fasterxml.jackson.version>
+        <com.typesafe.akka.stream.version>2.5.12</com.typesafe.akka.stream.version>
+        <com.typesafe.akka.http.version>10.1.1</com.typesafe.akka.http.version>
+    </properties>
+
     <modules>
-        <module>rest-rfc7807-parent</module>
         <module>rest-rfc7807-api</module>
         <module>rest-rfc7807-client</module>
     </modules>
